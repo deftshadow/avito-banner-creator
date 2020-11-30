@@ -5,7 +5,6 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { createStore, compose } from "redux";
 import { rootReducer } from "./store/";
-import reportWebVitals from "./reportWebVitals";
 
 declare global {
   interface Window {
@@ -25,5 +24,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-reportWebVitals();
