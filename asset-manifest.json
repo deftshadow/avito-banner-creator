@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/banner-creator/static/css/main.d44b65fd.chunk.css",
+    "main.js": "/banner-creator/static/js/main.1839363b.chunk.js",
+    "main.js.map": "/banner-creator/static/js/main.1839363b.chunk.js.map",
+    "runtime-main.js": "/banner-creator/static/js/runtime-main.36292c6e.js",
+    "runtime-main.js.map": "/banner-creator/static/js/runtime-main.36292c6e.js.map",
+    "static/js/2.07fab544.chunk.js": "/banner-creator/static/js/2.07fab544.chunk.js",
+    "static/js/2.07fab544.chunk.js.map": "/banner-creator/static/js/2.07fab544.chunk.js.map",
+    "index.html": "/banner-creator/index.html",
+    "static/css/main.d44b65fd.chunk.css.map": "/banner-creator/static/css/main.d44b65fd.chunk.css.map",
+    "static/js/2.07fab544.chunk.js.LICENSE.txt": "/banner-creator/static/js/2.07fab544.chunk.js.LICENSE.txt",
+    "static/media/alignment-center.aa9f59ae.svg": "/banner-creator/static/media/alignment-center.aa9f59ae.svg",
+    "static/media/alignment-left.3bbb5c7a.svg": "/banner-creator/static/media/alignment-left.3bbb5c7a.svg",
+    "static/media/alignment-right.98fa0e50.svg": "/banner-creator/static/media/alignment-right.98fa0e50.svg",
+    "static/media/background-image.f878778c.svg": "/banner-creator/static/media/background-image.f878778c.svg",
+    "static/media/error-icon.57145e45.svg": "/banner-creator/static/media/error-icon.57145e45.svg",
+    "static/media/html-clipboard-icon.7ec1f6a4.svg": "/banner-creator/static/media/html-clipboard-icon.7ec1f6a4.svg",
+    "static/media/html-icon.dd5210f9.svg": "/banner-creator/static/media/html-icon.dd5210f9.svg",
+    "static/media/images-icon.f4cd6fee.svg": "/banner-creator/static/media/images-icon.f4cd6fee.svg",
+    "static/media/json-icon.ce4adf41.svg": "/banner-creator/static/media/json-icon.ce4adf41.svg",
+    "static/media/png-icon.267d628c.svg": "/banner-creator/static/media/png-icon.267d628c.svg",
+    "static/media/success-icon.99a759f4.svg": "/banner-creator/static/media/success-icon.99a759f4.svg",
+    "static/media/text-icon.7afcae57.svg": "/banner-creator/static/media/text-icon.7afcae57.svg",
+    "static/media/warning-icon.013469f4.svg": "/banner-creator/static/media/warning-icon.013469f4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36292c6e.js",
+    "static/js/2.07fab544.chunk.js",
+    "static/css/main.d44b65fd.chunk.css",
+    "static/js/main.1839363b.chunk.js"
+  ]
+}
