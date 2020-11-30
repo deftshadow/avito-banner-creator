@@ -5,6 +5,7 @@
   resize: none;
   width: inherit;
   height: inherit;
+  display: inline-block;
   padding: 0;
   overflow: hidden;
   text-align: left;

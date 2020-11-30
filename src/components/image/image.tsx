@@ -30,13 +30,12 @@ const Image: React.FC<Props> = ({ imagePreview, deleteHandler }) => {
       default={{
         x: 0,
         y: 0,
-        width: 100,
-        height: 50,
+        width: 150,
+        height: 150,
       }}
-      bounds=".editor"
       onDragStop={(e, data) => {
         if (`${data.x}px` === image.left && `${data.y}px` === image.top) return;
-        dispatch(changeImagePosition(`${data.x}, ${data.y}`));
+        dispatch(changeImagePosition(`${data.x}px, ${data.y}px`));
       }}
       onResizeStart={(e, direction, ref) => {
         ref.classList.toggle("preview-image__drag");

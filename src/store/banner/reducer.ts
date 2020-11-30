@@ -9,8 +9,8 @@ import {
 
 const initialState: BannerState = {
   backgroundColor: "#E17BE1",
-  width: 250,
-  height: 250,
+  width: 350,
+  height: 350,
   link: "",
 };
 

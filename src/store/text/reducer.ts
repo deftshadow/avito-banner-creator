@@ -12,8 +12,8 @@ import {
 
 const initialState: TextState = {
   isText: false,
-  width: 220,
-  height: 20,
+  width: 180,
+  height: 23,
   value: "",
   fontSize: 20,
   left: "0px",

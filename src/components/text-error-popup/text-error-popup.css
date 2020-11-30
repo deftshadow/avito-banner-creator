@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  font-size: 15px;
+  font-size: 1.5rem;
   height: fit-content;
   left: calc(50% - 80px);
   top: 0;
-  width: 170px;
+  width: 250px;
   transform: translateY(-100%);
   transition: transform 0.3s ease-out;
   background-color: #d18b4a;
@@ -17,7 +17,7 @@
 }
 
 .show {
-  transform: translateY(33%);
+  transform: translateY(60%);
 }
 
 .popup-warning {

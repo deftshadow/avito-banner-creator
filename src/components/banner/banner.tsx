@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./banner.css";
 
 import Image from "../image/image";
@@ -27,21 +27,39 @@ const Banner: React.FC<Props> = ({
   const textElement = isText ? (
     <Text showPopupHandler={showPopupHandler} deleteHandler={deleteHandler} />
   ) : null;
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const banner = ref.current;
+    banner?.classList.toggle("banner-animation");
+    setTimeout(() => {
+      banner?.classList.toggle("banner-animation");
+    }, 1000);
+  }, []);
 
   return (
     <div className="banner-wrapper">
       <div
         id="capture"
         style={{
-          background: banner.backgroundColor,
+          background: "transparent",
           width: `${banner.width + 1}px`,
           height: `${banner.height + 1}px`,
         }}
-        className="banner"
-        draggable={false}
       >
-        {imageElement}
-        {textElement}
+        <div
+          ref={ref}
+          style={{
+            background: banner.backgroundColor,
+            width: `${banner.width + 1}px`,
+            height: `${banner.height + 1}px`,
+          }}
+          className="banner"
+          draggable={false}
+        >
+          {imageElement}
+          {textElement}
+        </div>
       </div>
     </div>
   );

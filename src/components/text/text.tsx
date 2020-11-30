@@ -18,27 +18,27 @@ const Text: React.FC<Props> = ({ deleteHandler, showPopupHandler }) => {
   const [isFocused, setIsFocused] = useState(true);
   const text = useSelector((state: ApplicationState) => state.text);
   const dispatch = useDispatch();
-  const textArea = useRef<HTMLTextAreaElement>(null);
+  const textArea = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const textElement = textArea.current as HTMLTextAreaElement;
+    const textElement = textArea.current as HTMLDivElement;
     textElement.focus();
   });
 
   useEffect(() => {
     if (isFocused) {
-      const textElement = textArea.current as HTMLTextAreaElement;
+      const textElement = textArea.current as HTMLDivElement;
       textElement.focus();
     }
   }, [isFocused]);
 
-  const textAreaHandler = (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
+  const textAreaHandler = (event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key === "Delete") {
       deleteHandler("text");
       return;
     } else {
-      const lineCount = (event.target as HTMLTextAreaElement).value.match(/\n/g)
+      const lineCount = (event.target as HTMLDivElement).innerHTML.match(/<br>/g)
         ?.length;
-      if (event.key === "Enter" && lineCount === 2) {
+      if (event.key === "Enter" && lineCount === 3) {
         event.preventDefault();
         showPopupHandler();
       }
@@ -48,12 +48,11 @@ const Text: React.FC<Props> = ({ deleteHandler, showPopupHandler }) => {
   return (
     <Rnd
       default={{
-        x: 0,
-        y: 0,
-        width: text.width,
-        height: text.height,
+        x: 25,
+        y: 25,
+        width: 180,
+        height: 30,
       }}
-      bounds="parent"
       disableDragging={isFocused}
       onMouseDown={(e) => {
         if (e.detail === 2) {
@@ -63,35 +62,33 @@ const Text: React.FC<Props> = ({ deleteHandler, showPopupHandler }) => {
       }}
       onDragStop={(e, data) => {
         if (`${data.x}px` === text.left && `${data.y}px` === text.top) return;
-        dispatch(changeTextPosition(`${data.x}, ${data.y}`));
+        dispatch(changeTextPosition(`${data.x}px, ${data.y}px`));
       }}
       onResizeStart={(e, direction, ref) => {
         ref.classList.toggle("banner__text__drag");
       }}
       onResizeStop={(e, direction, ref, delta, position) => {
         ref.classList.toggle("banner__text__drag");
-        dispatch(
-          changeTextSize(ref.clientWidth, ref.clientHeight)
-        );
+        dispatch(changeTextSize(ref.clientWidth, ref.clientHeight));
       }}
     >
-      <textarea
+      <div
         ref={textArea}
         className="banner__text"
-        wrap='off'
-        rows={3}
-        cols={60}
-        style={{ fontSize: text.fontSize, textAlign: text.alignment }}
+        style={{
+          fontSize: text.fontSize,
+          textAlign: text.alignment,
+        }}
         placeholder="Text"
         onKeyDown={isFocused ? textAreaHandler : () => {}}
-        onChange={(e) => {
-          dispatch(changeTextValue(e.target.value));
+        onInput={(e) => {
+          dispatch(changeTextValue((e.target as HTMLDivElement).innerText));
         }}
-        disabled={!isFocused}
+        contentEditable={isFocused}
         onBlur={() => {
           setIsFocused(false);
         }}
-      ></textarea>
+      ></div>
     </Rnd>
   );
 };

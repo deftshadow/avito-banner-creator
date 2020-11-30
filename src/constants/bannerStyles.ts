@@ -3,6 +3,7 @@ export const textStyles = `z-index: 100;
     color: white;
     border: none;
     padding: 0;
+    margin: 0;
     overflow: hidden;
     position: absolute;`;
 

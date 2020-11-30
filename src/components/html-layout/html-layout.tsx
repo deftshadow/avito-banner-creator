@@ -23,8 +23,8 @@ const HTMLLayout: React.FC<Props> = ({ discard }) => {
   };
 
   const getPosition = (element: PositionState): string => {
-    return `top: ${element.top}px;
-    left: ${element.left}px;`;
+    return `top: ${element.top};
+    left: ${element.left};`;
   };
 
   const image = bannerImage.imagePreview

@@ -11,8 +11,8 @@
 }
 
 .html-layout__icon {
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .html-layout__button {
@@ -22,6 +22,7 @@
   border: none;
   outline: none;
   margin-top: 10px;
+  font-size: 1.5rem;
 }
 
 .html-layout__button:active {
@@ -40,6 +41,7 @@
   border: 1px solid hsla(0, 0%, 100%, 0.2);
   outline: none;
   margin: 2px 0;
+  font-size: 1.5rem;
 }
 
 .html-layout__input:focus {

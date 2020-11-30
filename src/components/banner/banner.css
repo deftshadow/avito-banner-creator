@@ -3,8 +3,6 @@
   display: block;
   position: relative;
   border-radius: 5px;
-  animation: banner-appear 0.7s ease-in-out;
-  animation-delay: 0.1s;
   overflow: hidden;
 }
 
@@ -18,13 +16,9 @@
   height: 100%;
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.banner-animation {
+  animation: banner-appear 0.7s ease-in-out;
+  animation-delay: 0.1s;
 }
 
 @keyframes banner-appear {
