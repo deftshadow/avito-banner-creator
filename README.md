@@ -2,6 +2,7 @@
 
 ## Запуск
 После запуска приложение доступно по адресу http://localhost:3999
+Деплой доступен по ссылке: https://deftshadow.github.io/avito-banner-creator/
 
 ## Функционал:
 
