@@ -1,0 +1,8 @@
+.palette__button {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 3px 2px;
+}

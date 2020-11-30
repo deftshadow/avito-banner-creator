@@ -1,0 +1,18 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  z-index: 500;
+  background-color: #0e0e10;
+  border-radius: 5px;
+  width: 20vw;
+  height: 35vh;
+  border: 0px solid #ccc;
+  padding: 0px;
+  left: calc(40vw + 45px);
+  top: 23vh;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}

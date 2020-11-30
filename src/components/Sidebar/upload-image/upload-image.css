@@ -1,0 +1,24 @@
+.sidebar__upload {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar__upload-input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 13px;
+}
+
+.sidebar__upload-button { 
+  background-color: #5e92e6;
+  border: 1px solid #699ae9df;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar__upload-button:hover {
+  background-color: #5e92e6cc;
+  outline: none;
+}

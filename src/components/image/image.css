@@ -1,0 +1,13 @@
+.preview-image {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.preview-image:hover {
+  outline: 1px solid gray;
+}
+
+.preview-image__drag {
+  outline: 1px dashed gray;
+}

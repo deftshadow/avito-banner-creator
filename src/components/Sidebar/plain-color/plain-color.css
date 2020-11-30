@@ -1,0 +1,13 @@
+.palette__color-picker {
+  margin-top: 15px;
+}
+
+.chrome-picker {
+  width: 100% !important;
+  height: 30% !important;
+  margin: auto !important;
+}
+
+.chrome-picker svg {
+  display: none;
+}

@@ -1,0 +1,24 @@
+.banner__text {
+  background-color: transparent;
+  border: none;
+  color: white;
+  resize: none;
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  overflow: hidden;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.banner__text:hover {
+  outline: 1px dashed gray;
+}
+
+.banner__text:focus {
+  outline: 1px dashed gray;
+}
+
+.banner__text__drag {
+  outline: 1px dashed gray;
+}

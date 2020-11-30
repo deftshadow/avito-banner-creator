@@ -1,0 +1,19 @@
+.sidebar__number-input-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.sidebar__number-input {
+  width: 2.4rem;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.sidebar__label p {
+  color: white;
+  display: inline;
+}

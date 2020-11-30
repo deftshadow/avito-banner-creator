@@ -1,0 +1,23 @@
+.sidebar__background-menu {
+  display: flex;
+  color: white;
+  font-size: 0.6rem;
+  border-bottom: 1px solid white;
+  padding: 0px 0px 5px 0px;
+}
+
+.sidebar__background-menu__button {
+  margin: 0px 3px;
+  border-bottom: none;
+  border-radius: 20% 20% 0 0;
+  transition: border-bottom 0.2s ease;
+  cursor: pointer;
+}
+
+.sidebar__background-menu__button:hover {
+  color: #6b6b70;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}

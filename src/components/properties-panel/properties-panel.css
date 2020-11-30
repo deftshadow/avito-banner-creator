@@ -1,0 +1,16 @@
+.properties {
+  display: flex;
+}
+
+.properties-panel {
+  display: inline-block;
+  position: relative;
+  background-color: #1b1b1f;
+  z-index: 200;
+  width: 45px;
+}
+
+.properties-panel img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(229deg)
+    brightness(104%) contrast(102%);
+}
