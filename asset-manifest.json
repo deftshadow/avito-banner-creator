@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/avito-banner-creator/static/css/main.d44b65fd.chunk.css",
-    "main.js": "/avito-banner-creator/static/js/main.1839363b.chunk.js",
-    "main.js.map": "/avito-banner-creator/static/js/main.1839363b.chunk.js.map",
+    "main.css": "/avito-banner-creator/static/css/main.56abb6f6.chunk.css",
+    "main.js": "/avito-banner-creator/static/js/main.6f475a80.chunk.js",
+    "main.js.map": "/avito-banner-creator/static/js/main.6f475a80.chunk.js.map",
     "runtime-main.js": "/avito-banner-creator/static/js/runtime-main.7bf8db46.js",
     "runtime-main.js.map": "/avito-banner-creator/static/js/runtime-main.7bf8db46.js.map",
     "static/js/2.07fab544.chunk.js": "/avito-banner-creator/static/js/2.07fab544.chunk.js",
     "static/js/2.07fab544.chunk.js.map": "/avito-banner-creator/static/js/2.07fab544.chunk.js.map",
     "index.html": "/avito-banner-creator/index.html",
-    "static/css/main.d44b65fd.chunk.css.map": "/avito-banner-creator/static/css/main.d44b65fd.chunk.css.map",
+    "static/css/main.56abb6f6.chunk.css.map": "/avito-banner-creator/static/css/main.56abb6f6.chunk.css.map",
     "static/js/2.07fab544.chunk.js.LICENSE.txt": "/avito-banner-creator/static/js/2.07fab544.chunk.js.LICENSE.txt",
     "static/media/alignment-center.aa9f59ae.svg": "/avito-banner-creator/static/media/alignment-center.aa9f59ae.svg",
     "static/media/alignment-left.3bbb5c7a.svg": "/avito-banner-creator/static/media/alignment-left.3bbb5c7a.svg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.7bf8db46.js",
     "static/js/2.07fab544.chunk.js",
-    "static/css/main.d44b65fd.chunk.css",
-    "static/js/main.1839363b.chunk.js"
+    "static/css/main.56abb6f6.chunk.css",
+    "static/js/main.6f475a80.chunk.js"
   ]
 }
